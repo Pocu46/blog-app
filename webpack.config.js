@@ -8,10 +8,10 @@ module.exports = {
     filename: 'bundle.js'
   },
   devServer: {
-    // contentBase: __dirname + '/dist'
+    contentBase: __dirname + '/dist'
     // contentBase: 'dist/',
-    port: 3000,
-    open: true
+    // port: 3000,
+    // open: true
   },
   plugins: [
     new HTMLPlugin({
