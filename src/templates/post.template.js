@@ -1,9 +1,9 @@
 export function renderPost(post, options = {}) {
   const tag = post.type === 'news'
-    ? <li className="tag tag-blue tag-rounded">Новость</li>
-    : <li className="tag tag-rounded">Заметка</li>
+    ? '<li className="tag tag-blue tag-rounded">Новость</li>'
+    : '<li className="tag tag-rounded">Заметка</li>'
 
-  const favorites = JSON.parse(localStorage.getItem('favorites') || [])
+  const favorites = JSON.parse(localStorage.getItem('favorites')) || []
   const candidate = favorites.find(p => p.id === post.id)
 
   const button = candidate
